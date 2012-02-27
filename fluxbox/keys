@@ -1,10 +1,10 @@
-Mod1 1 :RootMenu 
+Mod1 F1 :RootMenu 
 
 # open a dialog to run programs
-Mod1 2 :Exec fbrun
+Mod1 F2 :Exec fbrun
 
 # open a terminal
-Mod1 3 :Exec gnome-terminal --hide-menubar
+Mod1 F3 :Exec gnome-terminal --hide-menubar
 
 # switch keyboard layout
 Mod4 1 :Exec setxkbmap us 
