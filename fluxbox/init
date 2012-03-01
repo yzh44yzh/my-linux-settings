@@ -72,4 +72,5 @@ session.appsFile:	/home/yura/.fluxbox/apps
 session.styleOverlay:	/home/yura/.fluxbox/overlay
 session.cacheMax:	200
 session.styleFile:	/usr/share/fluxbox/styles/bora_green
+# session.styleFile:	/home/yura/.fluxbox/styles/Meta
 session.ignoreBorder:	false
