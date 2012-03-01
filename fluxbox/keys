@@ -7,8 +7,12 @@ Mod1 F2 :Exec fbrun
 Mod1 F3 :Exec gnome-terminal --hide-menubar
 
 # switch keyboard layout
-Mod4 Up :Exec setxkbmap us 
-Mod4 Down :Exec setxkbmap ru
+Mod4 j :Exec setxkbmap us 
+Mod4 k :Exec setxkbmap ru
+
+# volume
+Mod4 Up :Exec amixer sset Master,0 1+ 
+Mod4 Down :Exec amixer sset Master,0 1- 
 
 # cycle through tabs in the current window
 Mod4 Right :NextTab
