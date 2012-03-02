@@ -4,8 +4,5 @@
 [exec] (chrome) {google-chrome}
 [exec] (IDEA) {~/dev/idea/bin/idea.sh}
 [separator]
-[exec] (ru lang) {setxkbmap ru} 
-[exec] (us lang) {setxkbmap us} 
-[separator]
 [include] (/etc/X11/fluxbox/fluxbox-menu)
 [end]

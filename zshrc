@@ -1,3 +1,5 @@
+setxkbmap us,ru -option grp:shift_caps_switch
+
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -45,11 +47,9 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias rm='rm -i'
 alias rmf='rm -rf'
-alias rmt='rm -rf temp'
 alias cp='cp -ir'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
-alias cdy='cd /mnt/2send/yura'
 
 # working with subversion
 alias ss='svn status'
@@ -72,20 +72,9 @@ alias gp='git push origin '
 alias gu='git pull origin '
 alias gpush='git push origin master'
 
-# working with maven
-alias mi='mvn install -Dmaven.test.skip=true'
-alias mci='mvn clean install'
-
-# search
-alias gg='find . -name \*as -o -name \*mxml | xargs grep'
-alias ggg='find . -name \*java -o -name \*scala | xargs grep'
-alias gggg='find . -type f | xargs grep'
-
 
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/dev/apache-maven-3.0.3/bin
-PATH=$PATH:$HOME/dev/fdk/bin
-PATH=$PATH:$HOME/dev/rase
 export PATH
 
 export IDEA_JDK=/usr/java/latest/
@@ -94,9 +83,6 @@ export JAVA_HOME=/usr/java/latest/
 
 export EDITOR="emacs -nw"
 export SVN_EDITOR="emacs -nw"
-
-export M2_HOME=$HOME/dev/apache-maven-3.0.3/
-export MAVEN_OPTS=-Xmx1024m
 
 export SVNL=svn://192.168.0.202
 export SVNR=svn://81.25.45.63
