@@ -1,4 +1,5 @@
 setxkbmap us,ru -option grp:shift_caps_switch
+crontab ~/p/my-linux-settings/mycron
 
 # Set up the prompt
 
