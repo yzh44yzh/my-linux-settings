@@ -1,0 +1,29 @@
+#!/bin/bash
+
+OUTPUT=$1
+if [ -z $OUTPUT ]; then
+	OUTPUT=screencast
+fi
+
+#ffmpeg \
+#-f alsa -i pulse \
+#-f x11grab -s 1024x768 -r 20 -i :0.0+50,50 \
+#-vcodec mpeg4 -acodec pcm_s16le -sameq \
+#-metadata author="yzh44yzh" \
+#-y $OUTPUT-raw.mkv
+
+ffmpeg -i $OUTPUT-raw.mkv \
+-acodec aac -ab 128k -ac 2 -strict experimental \
+-vcodec libx264 -vpre hq \
+-b 4000k -minrate 4000k -maxrate 4000k -bufsize 1835 \
+-y $OUTPUT.mp4
+
+#TODO
+# - zvyk s rhytmbox -- ne udalos'
+#   no nyzhen, s musykoj ono legche i interesnee smotritsja
+# - upravlenie metadannymi
+#   - uznat', kakie oni voobsche byvajut
+#   - zadavat' iz komandnoj stroki
+
+#-metadata title="Looking for silver bullet." \
+#-metadata comment="Flex, IDEA, Maven, Flexmojos, Linux" \
