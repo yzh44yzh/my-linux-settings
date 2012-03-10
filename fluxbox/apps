@@ -1,25 +1,22 @@
-# http://manpages.ubuntu.com/manpages/maverick/man5/fluxbox-apps.5.html
-
 [app] (name=fbrun)
   [Position]	(CENTER)	{0 0}
   [Layer]	{2}
 [end]
-
 [app] (name=emacs) (class=Emacs)
   [Dimensions]	{910 700}
   [Position]	(TOP)	{0 0}
-  [Tab] {yes}
+  [Tab]		{yes}
 [end]
-
 [app] (name=gnome-terminal)
-  [Dimensions] {910 700}
-  [Position] (TOP) {0 0}
-  [Tab] {yes}
+  [Dimensions]	{910 700}
+  [Position]	(TOP)	{0 0}
+  [Tab]		{yes}
 [end]
-
-# group doesn't work :(
-[group] (workspace=[current])
+[group]  (workspace=[current])
  [app] (name=gnome-terminal)
  [app] (name=emacs)
 [end]
-
+[app] (name=google-chrome) (class=Google-chrome)
+  [Dimensions]	{1050 750}
+  [Position]	(CENTER)	{0 0}
+[end]
