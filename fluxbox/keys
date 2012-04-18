@@ -20,6 +20,10 @@ Mod4 Down :Exec amixer sset Master,0 1-
 Mod4 Right :NextTab
 Mod4 Left :PrevTab
 
+# open the window menu
+Mod4 space :WindowMenu
+
+
 ###########
 
 # click on the desktop to get menus
@@ -77,9 +81,6 @@ Mod1 F5 :Kill
 Mod1 F9 :Minimize
 Mod1 F10 :Maximize
 Mod1 F11 :Fullscreen
-
-# open the window menu
-Mod1 space :WindowMenu
 
 # exit fluxbox
 Control Mod1 Delete :Exit
