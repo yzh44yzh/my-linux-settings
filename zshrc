@@ -42,6 +42,8 @@ PROMPT='%F{green}%B%n%b%f %F{blue}%~ $%f '
 # RPROMPT='%K{red}%T%k'
 RPROMPT='%F{green}:)%f'
 
+alias off='sudo pm-suspend'
+
 # working with file system
 alias ls='ls --color -CF'
 alias ll='ls -lh'
