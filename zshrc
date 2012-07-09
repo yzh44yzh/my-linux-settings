@@ -89,4 +89,6 @@ export SVN_EDITOR="emacs -nw"
 export SVNL=svn://192.168.0.202
 export SVNR=svn://81.25.45.63
 
+export LD_LIBRARY_PATH=/usr/local/lib/
+
 cd

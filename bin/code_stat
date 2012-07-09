@@ -2,39 +2,26 @@
 
 DIR=$1
 if [ -z $DIR ]; then
-	DIR=`pwd`
+    DIR=`pwd`
 fi
 
 cd $DIR
 
-C=0
-L=0
-function sum
-{
-	N=`wc -l $1 | cut -d' ' -f1`
-	C=$(($C + 1))
-	L=$(($L + $N))
-}
-
 function stat()
 {
-  HINT=$1
-  FILTER=$2
-  
-  C=0
-  L=0
-  for i in $( $FILTER ); do
-    sum $i
-  done
-  echo "$HINT classes:$C lines:$L"
+    F=0
+    L=0
+    for i in $@; do
+	N=`wc -l $i | cut -d' ' -f1`
+	F=$(($F + 1))
+	L=$(($L + $N))
+    done
+    echo " files:$F lines:$L"
 }
 
-stat 'Java:' 'find . -name *.java'
-stat 'Flex:' 'find . -name *.as -o -name *.mxml'
-stat 'FMS:' 'find . -name *.asc'
-stat 'PHP:' 'find . -name *.php'
-stat 'html/js:' 'find . -name *.js -o -name *.htm -o -name *.html'
-stat 'Erlang:' 'find . -name *.erl -o -name *.hrl'
-stat 'Scala:' 'find . -name *.scala'
-stat 'Groovy:' 'find . -name *.groovy'
-
+echo -n "Erlang: "; stat `find . -name \*.erl -o -name \*.hrl`
+echo -n "Java:   "; stat `find . -name \*.java`
+echo -n "Scala:  "; stat `find . -name \*.scala`
+echo -n "JS:     "; stat `find . -name \*.js`
+echo -n "HTML:   "; stat `find . -name \*.htm -o -name \*.html`
+echo -n "CSS:    "; stat `find . -name \*.css`
