@@ -1,5 +1,5 @@
-setxkbmap us,ru -option grp:shift_caps_switch
-crontab ~/p/my-linux-settings/mycron
+# setxkbmap us,ru -option grp:shift_caps_switch
+# crontab ~/p/my-linux-settings/mycron
 
 # Set up the prompt
 
@@ -74,15 +74,14 @@ alias gca='git commit -a -m '
 alias gp='git push origin '
 alias gu='git pull origin '
 alias gpush='git push origin master'
+alias gpull='git pull origin master'
 
-
-PATH=$PATH:$HOME/bin
-PATH=$PATH:$HOME/dev/apache-maven-3.0.3/bin
+PATH=$HOME/bin:$HOME/dev/firefox:$HOME/dev/idea/bin:$HOME/dev/scala/bin:$PATH
 export PATH
 
-export IDEA_JDK=/usr/java/latest/
-export JDK_HOME=/usr/java/latest/
-export JAVA_HOME=/usr/java/latest/
+export JDK_HOME=/usr/lib/jvm/default-java 
+export IDEA_JDK=$JDK_HOME
+export JAVA_HOME=$JDK_HOME
 
 export EDITOR="emacs -nw"
 export SVN_EDITOR="emacs -nw"
@@ -90,3 +89,6 @@ export SVN_EDITOR="emacs -nw"
 export SVNL=svn://192.168.0.202
 export SVNR=svn://81.25.45.63
 
+export LD_LIBRARY_PATH=/usr/local/lib/
+
+cd
