@@ -68,18 +68,21 @@ alias rmsvn='find . -name .svn | xargs rm -rf'
 
 # working with git
 alias gs='git status'
+alias gd='git diff --word-diff'
 alias ga='git add'
 alias gc='git commit -m '
 alias gca='git commit -a -m '
+alias gl='git log --oneline --decorate'
 alias gp='git push origin '
 alias gu='git pull origin '
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
 
-PATH=$HOME/bin:$HOME/dev/firefox:$HOME/dev/idea/bin:$HOME/dev/scala/bin:$PATH
+PATH=$HOME/bin:$HOME/dev/firefox:$HOME/dev/java/bin:$HOME/dev/scala/bin:$PATH
 export PATH
 
-export JDK_HOME=/usr/lib/jvm/default-java 
+#export JDK_HOME=/usr/lib/jvm/default-java 
+export JDK_HOME=/home/yura/dev/java/
 export IDEA_JDK=$JDK_HOME
 export JAVA_HOME=$JDK_HOME
 
