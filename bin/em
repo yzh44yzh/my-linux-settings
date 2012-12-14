@@ -1,0 +1,3 @@
+#!/bin/bash
+
+emacs --geometry=110x38+180+0 
