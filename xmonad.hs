@@ -5,7 +5,7 @@ import XMonad.Util.EZConfig
 import XMonad.Util.Paste
 
 main = xmonad $ gnomeConfig
-       { terminal = "gnome-terminal"
+       { terminal = "mate-terminal"
        , normalBorderColor  = "#111111"
        , focusedBorderColor = "#000066"
        , modMask = mod4Mask -- set the mod key to the windows key
@@ -17,5 +17,9 @@ main = xmonad $ gnomeConfig
                            , ("M-<F4>", kill)
                            , ("M-w", sendKey controlMask xK_c)
                            , ("M-y", sendKey controlMask xK_v)
+                           , ("M-<F2>", spawn "grun")
+                           , ("M-p", spawn "exe=`dmenu_path | dmenu` && eval \"exec $exe\"")
+                           , ("M-g", spawn "google-chrome")
+                           , ("M-e", spawn "emacs")
                            , ("M-s h", spawn "xmessage 'hello, xmonad!'")]
 
