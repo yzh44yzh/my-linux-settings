@@ -78,6 +78,8 @@ alias gu='git pull origin '
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
 
+alias kindle=gmtp
+
 PATH=$HOME/bin:$HOME/dev/firefox:$HOME/dev/java/bin:$HOME/dev/scala/bin:$PATH
 export PATH
 
