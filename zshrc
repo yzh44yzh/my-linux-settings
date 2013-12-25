@@ -80,7 +80,7 @@ alias gpull='git pull origin master'
 
 alias kindle=gmtp
 
-PATH=$HOME/bin:$HOME/dev/firefox:$HOME/dev/java/bin:$HOME/dev/scala/bin:$PATH
+PATH=$HOME/bin:$HOME/p/notes/bin:$PATH
 export PATH
 
 #export JDK_HOME=/usr/lib/jvm/default-java 
