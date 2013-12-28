@@ -1,8 +1,0 @@
-[begin] (fluxbox)
-[exec] (term) {gnome-terminal --hide-menubar}
-[exec] (emacs) {emacs}
-[exec] (chrome) {google-chrome}
-[exec] (IDEA) {~/dev/idea/bin/idea.sh}
-[separator]
-[include] (/etc/X11/fluxbox/fluxbox-menu)
-[end]
