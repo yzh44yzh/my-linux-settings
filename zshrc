@@ -77,6 +77,8 @@ alias gp='git push origin '
 alias gu='git pull origin '
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
+alias gpushd='git push origin development'
+alias gpulld='git pull origin development'
 
 alias kindle=gmtp
 
