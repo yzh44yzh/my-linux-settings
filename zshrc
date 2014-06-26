@@ -54,18 +54,6 @@ alias cp='cp -ir'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 
-# working with subversion
-alias ss='svn status'
-alias su='svn update --set-depth=infinity'
-alias sc='svn commit -m '
-alias si='svn propedit svn:ignore '
-alias sd='svn diff -r HEAD '
-alias sr='svn revert --depth infinity '
-alias srw='svn resolve --accept=working '
-alias sm='svn merge '
-alias check='find . -maxdepth 1 | xargs svn status'
-alias rmsvn='find . -name .svn | xargs rm -rf'
-
 # working with git
 alias gs='git status'
 alias gd='git diff --word-diff'
@@ -82,10 +70,15 @@ alias gpulld='git pull origin development'
 
 alias kindle=gmtp
 
+alias pm='python manage.py'
+alias mp=mplayer
+alias kill-it-with-fire='kill -9'
+alias suspend='sudo pm-suspend'
+
 PATH=$HOME/bin:$HOME/p/notes/bin:$PATH
 export PATH
 
-#export JDK_HOME=/usr/lib/jvm/default-java 
+#export JDK_HOME=/usr/lib/jvm/default-java
 export JDK_HOME=/home/yura/dev/java/
 export IDEA_JDK=$JDK_HOME
 export JAVA_HOME=$JDK_HOME
@@ -97,5 +90,3 @@ export SVNL=svn://192.168.0.202
 export SVNR=svn://81.25.45.63
 
 export LD_LIBRARY_PATH=/usr/local/lib/
-
-cd
