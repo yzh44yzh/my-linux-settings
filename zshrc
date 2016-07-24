@@ -1,6 +1,3 @@
-# setxkbmap us,ru -option grp:shift_caps_switch
-# crontab ~/p/my-linux-settings/mycron
-
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -42,8 +39,6 @@ PROMPT='%F{green}%B%n%b%f %F{blue}%~ $%f '
 # RPROMPT='%K{red}%T%k'
 RPROMPT='%F{green}:)%f'
 
-alias off='sudo pm-suspend'
-
 # working with file system
 alias ls='ls --color -CF'
 alias ll='ls -lh'
@@ -65,28 +60,13 @@ alias gp='git push origin '
 alias gu='git pull origin '
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
-alias gpushd='git push origin development'
-alias gpulld='git pull origin development'
-
-alias kindle=gmtp
 
 alias pm='python manage.py'
 alias mp=mplayer
 alias kill-it-with-fire='kill -9'
-alias suspend='sudo pm-suspend'
 
-PATH=$HOME/bin:$HOME/p/notes/bin:$PATH
+PATH=$HOME/bin:$PATH
 export PATH
 
-#export JDK_HOME=/usr/lib/jvm/default-java
-export JDK_HOME=/home/yura/dev/java/
-export IDEA_JDK=$JDK_HOME
-export JAVA_HOME=$JDK_HOME
-
 export EDITOR="emacs -nw"
-export SVN_EDITOR="emacs -nw"
-
-export SVNL=svn://192.168.0.202
-export SVNR=svn://81.25.45.63
-
 export LD_LIBRARY_PATH=/usr/local/lib/
