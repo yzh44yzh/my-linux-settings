@@ -37,7 +37,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 PROMPT='%F{green}%B%n%b%f %F{blue}%~ $%f '
 # PROMPT2='%i%U> '
 # RPROMPT='%K{red}%T%k'
-RPROMPT='%F{green}:)%f'
+# RPROMPT='%F{green}:)%f'
+RPROMPT=''
 
 # working with file system
 alias ls='ls --color -CF'
@@ -65,7 +66,7 @@ alias pm='python manage.py'
 alias mp=mplayer
 alias kill-it-with-fire='kill -9'
 
-PATH=$HOME/bin:$PATH
+PATH=/usr/local/pgsql/bin/:$HOME/bin:$HOME/.opam/system/bin:$PATH
 export PATH
 
 export EDITOR="emacs -nw"
