@@ -21,7 +21,7 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-eval "$(dircolors -b)"
+# eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
@@ -81,8 +81,8 @@ export PATH
 export EDITOR="emacs -nw"
 export LD_LIBRARY_PATH=/usr/local/lib/
 
-export WORKON_HOME=~/dev/spa_env
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=~/dev/spa_env
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # OPAM configuration
 . /home/y_zhloba/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
