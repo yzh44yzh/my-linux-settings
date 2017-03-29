@@ -41,7 +41,8 @@ PROMPT='%F{green}%B%n%b%f %F{blue}%~ $%f '
 RPROMPT=''
 
 # working with file system
-alias ls='ls --color -CF'
+# alias ls='ls --color -F' # for linux
+alias ls='ls -GF'        # for mac
 alias ll='ls -lh'
 alias la='ls -A'
 alias rm='rm -i'
@@ -62,18 +63,8 @@ alias gu='git pull origin '
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
 
-alias pm='python manage.py'
-alias mp=mplayer
-alias kill-it-with-fire='kill -9'
-
-alias staging='ssh -i .ssh/wg_rsa wgnc-wgt1@ws-ovz-7-171'
-
-alias mm='make quick-compile'
-alias ss='make start'
-alias rr='make run'
-
-alias pm='python manage.py'
-alias py3=python3
+alias mm='make compile'
+alias ss='make console'
 
 PATH=/usr/local/pgsql/bin/:$HOME/bin:$HOME/.opam/system/bin:$PATH
 export PATH
@@ -81,8 +72,5 @@ export PATH
 export EDITOR="emacs -nw"
 export LD_LIBRARY_PATH=/usr/local/lib/
 
-# export WORKON_HOME=~/dev/spa_env
-# source /usr/local/bin/virtualenvwrapper.sh
-
 # OPAM configuration
-. /home/y_zhloba/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+# . /home/y_zhloba/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
