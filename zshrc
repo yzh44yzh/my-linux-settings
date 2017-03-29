@@ -1,6 +1,3 @@
-# setxkbmap us,ru -option grp:shift_caps_switch
-# crontab ~/p/my-linux-settings/mycron
-
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -43,8 +40,6 @@ PROMPT='%F{green}%B%n%b%f %F{blue}%~ $%f '
 # RPROMPT='%F{green}:)%f'
 RPROMPT=''
 
-alias off='sudo pm-suspend'
-
 # working with file system
 alias ls='ls --color -CF'
 alias ll='ls -lh'
@@ -62,13 +57,14 @@ alias ga='git add'
 alias gc='git commit -m '
 alias gca='git commit -a -m '
 alias gl='git log --oneline --decorate'
-
-alias kindle=gmtp
+alias gp='git push origin '
+alias gu='git pull origin '
+alias gpush='git push origin master'
+alias gpull='git pull origin master'
 
 alias pm='python manage.py'
 alias mp=mplayer
 alias kill-it-with-fire='kill -9'
-alias suspend='sudo pm-suspend'
 
 alias staging='ssh -i .ssh/wg_rsa wgnc-wgt1@ws-ovz-7-171'
 
@@ -79,20 +75,10 @@ alias rr='make run'
 alias pm='python manage.py'
 alias py3=python3
 
-PATH=$HOME/bin:$HOME/p/notes/bin:$PATH
+PATH=/usr/local/pgsql/bin/:$HOME/bin:$HOME/.opam/system/bin:$PATH
 export PATH
 
-#export JDK_HOME=/usr/lib/jvm/default-java
-export JDK_HOME=/home/yura/dev/java/
-export IDEA_JDK=$JDK_HOME
-export JAVA_HOME=$JDK_HOME
-
 export EDITOR="emacs -nw"
-export SVN_EDITOR="emacs -nw"
-
-export SVNL=svn://192.168.0.202
-export SVNR=svn://81.25.45.63
-
 export LD_LIBRARY_PATH=/usr/local/lib/
 
 export WORKON_HOME=~/dev/spa_env
