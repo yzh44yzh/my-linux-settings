@@ -3,3 +3,5 @@
 	email = y_zhloba@wargaming.net
 [color]
 	ui = auto
+[core]
+    editor = "emacs -nw"
