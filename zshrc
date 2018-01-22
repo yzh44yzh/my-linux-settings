@@ -66,7 +66,7 @@ alias gpull='git pull origin master'
 alias mm='make compile'
 alias ss='make console'
 
-PATH=/usr/local/pgsql/bin/:$HOME/bin:$HOME/.opam/system/bin:$PATH
+PATH=$HOME/bin:/usr/local/lib/erlang/bin:$PATH
 export PATH
 
 export EDITOR="emacs -nw"
