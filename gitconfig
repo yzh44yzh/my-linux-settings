@@ -7,5 +7,3 @@
     default = simple
 [color]
 	ui = auto
-[core]
-    editor = "emacs -nw"
