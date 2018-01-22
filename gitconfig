@@ -1,5 +1,9 @@
 [user]
 	name = Yuriy Zhloba
 	email = y_zhloba@wargaming.net
+[core]
+    editor = "emacs -nw"
+[push]
+    default = simple
 [color]
 	ui = auto
