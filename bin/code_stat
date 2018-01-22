@@ -19,7 +19,12 @@ function stat()
     echo " files:$F lines:$L"
 }
 
+# TODO: set skip dirs, for example "_build", "deps" etc
+
 echo -n "Erlang: "; stat `find . -name \*.erl -o -name \*.hrl`
+echo -n "Elixir: "; stat `find . -name \*.ex -o -name \*.exs`
+echo -n "JSON:   "; stat `find . -name \*.json`
+echo -n "SQL:    "; stat `find . -name \*.sql`
 echo -n "Java:   "; stat `find . -name \*.java`
 echo -n "Scala:  "; stat `find . -name \*.scala`
 echo -n "JS:     "; stat `find . -name \*.js`
