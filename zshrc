@@ -66,7 +66,7 @@ alias gpull='git pull origin master'
 alias mm='make compile'
 alias ss='make console'
 
-PATH=$HOME/bin:/usr/local/lib/erlang/bin:$PATH
+PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/dev/idea-IC-193.6494.35/bin:$HOME/dev/pycharm-2019.2.1/bin:/usr/local/lib/erlang/bin:$PATH
 export PATH
 
 export EDITOR="emacs -nw"
